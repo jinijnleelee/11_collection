@@ -344,7 +344,7 @@ public class StudentService {
 			//String..toUpperCase() : 문자열을 대문자로 변환
 			//String.toLowerCase() : 문자열을 소문자로 변환
 			//문자열은 .equals()
-		if(ch == 'y') {
+		if(ch == 'Y') { //y를 소문자로 써서
 				Student temp = studentList.remove(index);
 				return temp.getName() + "의 정보가 제거되었습니다";
 				
