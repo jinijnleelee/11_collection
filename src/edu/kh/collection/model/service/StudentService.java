@@ -18,8 +18,9 @@ public class StudentService {
 	//학생 정보를 저장할  List 를 생성 (객체배열 업그레이드 버젼)
 	//java.util.List 인터페이스 : List에 반드시 필요한
 								//필수 기능을 모아둔 인터페이스
+	
 	//*인터페이스는 객체 생성 X, 부모 참조변수 O
-	//java.util.ArrayList : 배열 형태 List(가장 대표적인 List 자식 클래스)
+	//java.util.ArrayList : 배열 형태 List(가장 대표적인 List의 자식 클래스)
 
 	// ArrayList() 기본생성자 : 기본 크기10짜리 리스트 생성
 	//						 리스트 크기가 늘었다 줄었다 하기 때문에 큰 의미가 없음
@@ -29,7 +30,7 @@ public class StudentService {
 	
 	//List studentList = new ArrayList();//(검색) 조회 효율적
 	private List<Student> studentList = new ArrayList();
-	//List<Student> studentList = new ArrayList(); //추가,수정,삭제 효율적
+	///List<Student> studentList = new LinkedList<Student>();  //추가,수정,삭제 효율적
 	
 	//Student로 저장되는 타입이 제한된 리스트 생성
 	
