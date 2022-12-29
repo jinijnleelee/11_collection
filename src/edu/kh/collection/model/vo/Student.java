@@ -59,6 +59,12 @@ public class Student {
 	public void setScore(int score) {
 		this.score = score;
 	}
+	
+	
+	
+	
+	
+	
 	//알트 쉬프트 s 제너레이트 
 	
 	@Override

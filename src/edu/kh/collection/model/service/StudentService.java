@@ -71,6 +71,7 @@ public class StudentService {
 		//Student 객체가 맞는지 instanceof 로 확인하고
 		//다운캐스팅을 해야  (get(int index) 메소드가 반환형이 Object이기 때문에)
 		//Student기능을 사용할수있다.
+		//오브젝트 자손의 Student의 getName을 가져오고싶기때문
 		if(studentList.get(0) instanceof Student) {
 			System.out.println(((Student)studentList.get(0)).getName());
 			
@@ -166,6 +167,10 @@ public class StudentService {
 		System.out.println("성별(M/F) : ");
 		char gender = sc.next().charAt(0);
 		//String ->char
+		//String.charAt(index) : 문자열에서 특징 index에 위치한 문자 하나를 얻어옴
+//		ex)  "hello".charAt(1) - > 'e'
+//            01234
+//		
 		 
 		System.out.println("점수 : ");
 		int score	= sc.nextInt();
@@ -297,7 +302,7 @@ public class StudentService {
 			
 			
 			Student temp  = studentList.set(index, new Student(name,age,region,gender,score));
-		
+		//새로운 학생의 정보의 값을 저장할 temp 을 생성.
 		return temp.getName()+ "의 정보가 변경되었습니다";
 		
 	}
